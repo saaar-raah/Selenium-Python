@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -29,5 +30,6 @@ driver.find_element(By.ID, "salary").send_keys("5000")
 driver.find_element(By.ID, "department").click()
 driver.find_element(By.ID, "department").send_keys("Auditor")
 driver.find_element(By.ID, "submit").click()
-time.sleep(5)
+
+time.sleep(3)
 driver.close()
